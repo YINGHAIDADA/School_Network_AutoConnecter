@@ -34,6 +34,8 @@ class AutoConnect:
     def Login(self):
         '''
         自动化登录流程
+        目前已完成使用GET登陆的流程
+        TODO POST登录流程 
         :return:
         '''
         URL = f"http://{self.loginIP}:801/eportal/?c=Portal&a=login&callback=dr1003&login_method=1&user_account={self.user}&user_password={self.password}&wlan_user_ip={self.ip}&wlan_user_ipv6=&wlan_user_mac=000000000000"
