@@ -3,7 +3,10 @@
   <h1 align="center" style="margin: 0 auto 0 auto;">School Network AutoConnecter</h1>
 </p>
 <br>
-
+<p align="center">
+  <img src="https://img.shields.io/github/contributors/yinghaidada/School_Network_AutoConnecter?color=0088f">
+  <img src="https://img.shields.io/github/issues/yinghaidada/School_Network_AutoConnecter?color=0088f">
+<p>
 ### 用于解决大学校园网自动登录的解决方案，实现自动化登录流程，避免每天的重复劳动，保护身心健康
 <br>
 
