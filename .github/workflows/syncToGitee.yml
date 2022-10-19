@@ -16,3 +16,4 @@ jobs:
         dst_token:  ${{ secrets.GITEE_TOKEN }}
         static_list: "School_Network_AutoConnecter"
         force_update: true
+        debug: true
