@@ -50,6 +50,9 @@ class AutoConnect:
         elif 'bGRhcCBhdXRoIGVycm9y' in res.text:
             print("密码错误")
             return
+        elif r'\u8d26\u53f7\u4e0d\u80fd\u4e3a\u7a7a' in res.text:
+            print("账号不能为空")
+            return
         elif 'aW51c2UsIGxvZ2luIGFnYWluL' in res.text:
             self.Login()
         else:
