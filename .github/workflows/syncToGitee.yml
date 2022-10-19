@@ -7,13 +7,12 @@ jobs:
   repo-sync:
     runs-on: ubuntu-latest
     steps:
-    - name: Mirror the Github organization repos to Gitee.
-      uses: Yikun/hub-mirror-action@master
-      with:
-        src: 'github/yinghaidada'
-        dst: 'gitee/yinghaidada'
-        dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
-        dst_token:  ${{ secrets.GITEE_TOKEN }}
-        static_list: "learn-typescript"
-        force_update: true
-        debug: true
+      - name: Mirror the Github organization repos to Gitee.
+        uses: Yikun/hub-mirror-action@master
+        with:
+          src: 'github/yinghaidada'
+          dst: 'gitee/yinghaidada'
+          dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
+          dst_token:  ${{ secrets.GITEE_TOKEN }}
+          static_list: "learn-typescript"
+          force_update: true
