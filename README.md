@@ -43,6 +43,19 @@ python AutoConnect.py脚本绝对路径 校园网网址 登录用户名 密码
 cd /d %~dp0
 python E:\PythonProjects\School_Network_AutoConnecter\AutoConnect.py 172.16.253.3 E204561 mima123456
 ```
+
+> ### 如何检测是否有效
+在脚本后面加上一行,**`示例`**：
+```bat
+@echo off
+
+cd /d %~dp0
+python E:\PythonProjects\School_Network_AutoConnecter\AutoConnect.py 172.16.253.3 E204561 mima123456
+pause
+```
+运行`bat`查看结果,正常会有结果返回  
+测试成功后记得删除`pause`代码  
+![](doc/img/loginned.png)
 ---
 <br>
 
