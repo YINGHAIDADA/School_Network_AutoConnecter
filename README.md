@@ -53,9 +53,11 @@ cd /d %~dp0
 python E:\PythonProjects\School_Network_AutoConnecter\AutoConnect.py 172.16.253.3 E204561 mima123456
 pause
 ```
-运行`bat`查看结果,正常会有结果返回  
-测试成功后记得删除`pause`代码  
-![](doc/img/loginned.png)
+
+> 运行`bat`查看结果,正常会有结果返回  
+> 测试成功后记得删除`pause`代码  
+> ![](doc/img/loginned.png)
+
 ---
 <br>
 
