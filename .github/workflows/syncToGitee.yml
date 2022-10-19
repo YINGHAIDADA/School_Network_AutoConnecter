@@ -14,4 +14,5 @@ jobs:
         dst: 'gitee/yinghaidada'
         dst_key: ${{ secrets.GITEE_PRIVATE_KEY }}
         dst_token:  ${{ secrets.GITEE_TOKEN }}
+        static_list: "School_Network_AutoConnecter"
         force_update: true
