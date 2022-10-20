@@ -4,8 +4,7 @@ __Author__ = "YINGHAI"
 __Email__ = "pyj2897022134@gmail.com"
 
 import socket,sys,requests
-
-
+from plyer import notification
 
 class AutoConnect:
     def __init__(self,loginIp=None,user_account=None,user_password=None):
@@ -41,22 +40,34 @@ class AutoConnect:
         URL = f"http://{self.loginIP}:801/eportal/?c=Portal&a=login&callback=dr1003&login_method=1&user_account={self.user}&user_password={self.password}&wlan_user_ip={self.ip}&wlan_user_ipv6=&wlan_user_mac=000000000000"
         #print(URL)
         res = requests.get(URL)
+        massage ="""
+        """
         if '"msg":""' in res.text:
             print('当前设备已登录')
-            return
+            message = "当前设备已登录"
+            
         elif r'\u8ba4\u8bc1\u6210\u529f' in res.text:
             print('登录成功')
-            return
+            message = "登录成功"
         elif 'bGRhcCBhdXRoIGVycm9y' in res.text:
             print("密码错误")
-            return
+            message = "密码错误"
         elif r'\u8d26\u53f7\u4e0d\u80fd\u4e3a\u7a7a' in res.text:
             print("账号不能为空")
-            return
+            message = "账号不能为空"
         elif 'aW51c2UsIGxvZ2luIGFnYWluL' in res.text:
             self.Login()
         else:
             print("您可能欠费停机")
+            message = "您可能欠费停机"
+        
+        notification.notify(
+            title="校园网连接",
+            #app_name= "SNAC",
+            message = message,
+            app_icon="",
+            timeout=5
+        )
         return None
 
 
