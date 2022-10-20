@@ -93,11 +93,11 @@ https://www.icloud.com/shortcuts/9d9923eb7ed04f718db39c32a5e3f656
 > 
 > 其中`无线网`选择自己想要自动连接的`校园无线网`
 
-<img src="doc/img/ios2.gif" style="border-radius:20px;width:200px">
+<img src="doc/img/ios2-s.gif" style="border-radius:20px;width:200px">
 
 > 最终效果
 
-<img src="doc/img/ios.gif" style="border-radius:20px;width:200px">
+<img src="doc/img/ios-s.gif" style="border-radius:20px;width:200px">
 
 
 ---
