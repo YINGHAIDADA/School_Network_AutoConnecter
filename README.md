@@ -69,12 +69,35 @@ pause
 
 > 运行`bat`查看结果,正常会有结果返回  
 > 测试成功后记得删除`pause`代码  
-> ![](doc/img/loginned.png)
+> <img src="doc/img/loginned.png" style="border-radius:10px">
   
 > ### 如果报错，如何自检
 > [点击访问Debug文件](doc/debug.md)
 
 ### 2. 移动设备(iOS/iPadOS)
+
+> 确保你的设备里已经安装了`快捷指令`
+
+打开此链接,添加我制作的`快捷指令`
+
+```url
+https://www.icloud.com/shortcuts/9d9923eb7ed04f718db39c32a5e3f656
+```
+> 按照教程填入对应信息
+
+<img src="doc/img/ios1.png" style="border-radius:20px;width:200px">
+
+> 完成后保存
+
+> 再添加个人自动化
+> 
+> 其中`无线网`选择自己想要自动连接的`校园无线网`
+
+<img src="doc/img/ios2.gif" style="border-radius:20px;width:200px">
+
+> 最终效果
+
+<img src="doc/img/ios.gif" style="border-radius:20px;width:200px">
 
 
 ---
