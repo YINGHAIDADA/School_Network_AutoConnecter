@@ -12,6 +12,13 @@
 
 ### 用于解决大学校园网自动登录的解决方案，实现自动化登录流程，避免每天的重复劳动，保护身心健康
 
+**目录：**
+- [一. 准备](#一-准备)
+- [二. 配置](#二-配置)
+  - [1. 电脑(PC)有线网络和`Wi-Fi`连接](#1-电脑pc有线网络和wi-fi连接)
+  - [2. 移动设备(iOS/iPadOS)](#2-移动设备iosipados)
+- [三. 设置电脑(PC)开机自启动](#三-设置电脑pc开机自启动)
+
 <br>
 
 ## 一. 准备
@@ -30,6 +37,11 @@ pip install -r requirements.txt
 
 ## 二. 配置
 
+> 首先先自行排除一些问题，比如校园网是否欠费，原本是否正常可用，本脚本只建立在你的校园网本身是正常可用的状态
+
+### 1. 电脑(PC)有线网络和`Wi-Fi`连接
+> `Wi-Fi`要确保已连接上`WiFi`,第一次可设置`wifi自动连接`，后续就不用麻烦了
+
 根据自己学校信息，修改 `AutoConnecter.bat` 文件
 ```bat
 @echo off
@@ -44,8 +56,8 @@ python AutoConnect.py脚本绝对路径 校园网网址 登录用户名 密码
 cd /d %~dp0
 python E:\PythonProjects\School_Network_AutoConnecter\AutoConnect.py 172.16.253.3 E204561 mima123456
 ```
+> **如何检测是否有效**
 
-> ### 如何检测是否有效
 在脚本后面加上一行,**`示例`**：
 ```bat
 @echo off
@@ -62,10 +74,13 @@ pause
 > ### 如果报错，如何自检
 > [点击访问Debug文件](doc/debug.md)
 
+### 2. 移动设备(iOS/iPadOS)
+
+
 ---
 <br>
 
-## 三. 设置开机自启动
+## 三. 设置电脑(PC)开机自启动
 
 将修改好的 `AutoConnecter.bat` 文件复制到：
 ```cmd
