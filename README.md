@@ -93,11 +93,16 @@ https://www.icloud.com/shortcuts/9d9923eb7ed04f718db39c32a5e3f656
 > 
 > 其中`无线网`选择自己想要自动连接的`校园无线网`
 
-<img src="doc/img/ios2-s.gif" style="border-radius:20px;width:200px">
+> [点击查看超清动图](doc/img/ios2.gif)
 
+<img src="https://media3.giphy.com/media/5Uy9pspDfoD3ibCV0e/giphy.gif?cid=790b761139c981fd8614b5c8c659d9ea9d4bad1ad14f703e&rid=giphy.gif&ct=g" style="border-radius:20px;width:200px">
+
+  
 > 最终效果
 
-<img src="doc/img/ios-s.gif" style="border-radius:20px;width:200px">
+> [点击查看超清动图](doc/img/ios.gif)
+
+<img src="https://media1.giphy.com/media/7Vp9x8K4qJsNitSGED/giphy.gif?cid=790b76116ced8242ceb81d575afec4002504b287de67d209&rid=giphy.gif&ct=g" style="border-radius:20px;width:200px">
 
 
 ---
