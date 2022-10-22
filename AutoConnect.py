@@ -5,6 +5,8 @@ __Email__ = "pyj2897022134@gmail.com"
 
 import socket,sys,requests
 from plyer import notification
+import win32api, win32gui
+
 
 class AutoConnect:
     def __init__(self,loginIp=None,user_account=None,user_password=None):
@@ -70,6 +72,10 @@ class AutoConnect:
         )
         return None
 
+
+ct = win32api.GetConsoleTitle()
+hd = win32gui.FindWindow(0,ct)
+win32gui.ShowWindow(hd,0)
 
 login_ip = sys.argv[1]
 user = sys.argv[2]
