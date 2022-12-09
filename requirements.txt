@@ -1,2 +1,4 @@
 plyer==2.0.0
+pywin32==303
 requests==2.25.1
+win32gui==221.6
