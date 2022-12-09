@@ -3,9 +3,13 @@
 __Author__ = "YINGHAI"
 __Email__ = "pyj2897022134@gmail.com"
 
-import socket,sys,requests
+import socket
+import sys
+
+import requests
+import win32api
+import win32gui
 from plyer import notification
-import win32api, win32gui
 
 
 class AutoConnect:
@@ -73,6 +77,8 @@ class AutoConnect:
         return None
 
 
+
+# 当选用detecte_connection时，请注释掉下面三行代码
 ct = win32api.GetConsoleTitle()
 hd = win32gui.FindWindow(0,ct)
 win32gui.ShowWindow(hd,0)

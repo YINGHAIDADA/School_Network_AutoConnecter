@@ -56,6 +56,26 @@ python AutoConnect.py脚本绝对路径 校园网网址 登录用户名 密码
 cd /d %~dp0
 python E:\PythonProjects\School_Network_AutoConnecter\AutoConnect.py 172.16.253.3 E204561 mima123456
 ```
+
+> 如何自动检测断网自动连接
+
+修改 `detecte_connection.bat` 文件  
+  
+同上述格式
+```bat
+:check
+cls
+ping -n 4 www.baidu.com
+IF ERRORLEVEL 1 goto :connection
+IF ERRORLEVEL 0 goto :check
+
+:connection
+echo "开始连接"
+python 脚本绝对路径/AutoConnect.py 校园网网址 登录用户名 密码
+goto :check
+```
+
+
 > **如何检测是否有效**
 
 在脚本后面加上一行,**`示例`**：
@@ -66,6 +86,7 @@ cd /d %~dp0
 python E:\PythonProjects\School_Network_AutoConnecter\AutoConnect.py 172.16.253.3 E204561 mima123456
 pause
 ```
+
 
 > 运行`bat`查看结果,正常会有结果返回  
 > 测试成功后记得删除`pause`代码  
@@ -105,7 +126,7 @@ https://www.icloud.com/shortcuts/9d9923eb7ed04f718db39c32a5e3f656
 
 ## 三. 设置电脑(PC)开机自启动
 
-将修改好的 `AutoConnecter.bat` 文件复制到：
+将修改好的 `AutoConnecter.bat/detecte_connection.bat` 文件复制到：
 ```cmd
 C:\Users\你的用户名\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 ``` 
