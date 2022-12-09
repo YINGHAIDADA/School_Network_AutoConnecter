@@ -77,15 +77,15 @@ class AutoConnect:
         return None
 
 
+if __name__ == "__main__":
+    # 当选用detecte_connection时，请注释掉下面三行代码
+    ct = win32api.GetConsoleTitle()
+    hd = win32gui.FindWindow(0,ct)
+    win32gui.ShowWindow(hd,0)
 
-# 当选用detecte_connection时，请注释掉下面三行代码
-ct = win32api.GetConsoleTitle()
-hd = win32gui.FindWindow(0,ct)
-win32gui.ShowWindow(hd,0)
+    login_ip = sys.argv[1]
+    user = sys.argv[2]
+    password = sys.argv[3]
 
-login_ip = sys.argv[1]
-user = sys.argv[2]
-password = sys.argv[3]
-
-a =AutoConnect(login_ip,user,password)
-a.Login()
+    a =AutoConnect(login_ip,user,password)
+    a.Login()
