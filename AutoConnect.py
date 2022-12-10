@@ -79,9 +79,9 @@ class AutoConnect:
 
 if __name__ == "__main__":
     # 当选用detecte_connection时，请注释掉下面三行代码
-    ct = win32api.GetConsoleTitle()
-    hd = win32gui.FindWindow(0,ct)
-    win32gui.ShowWindow(hd,0)
+    # ct = win32api.GetConsoleTitle()
+    # hd = win32gui.FindWindow(0,ct)
+    # win32gui.ShowWindow(hd,0)
 
     login_ip = sys.argv[1]
     user = sys.argv[2]
