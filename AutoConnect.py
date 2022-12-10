@@ -7,8 +7,8 @@ import socket
 import sys
 
 import requests
-import win32api
-import win32gui
+#import win32api
+#import win32gui
 from plyer import notification
 
 
